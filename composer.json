@@ -1,0 +1,31 @@
+{
+	"name": "varacron/php-spreadsheet-table",
+	"description": "Convert spreadsheets to HTML table",
+	"type": "library",
+	"keywords": ["php", "spreadsheet", "table", "laravel", "html"],
+	"require": {
+		"phpoffice/phpspreadsheet": "^1.19"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"Varacron\\SpreadsheetTable\\": "src/"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Varacron\\SpreadsheetTable\\SpreadsheetTableServiceProvider"
+			]
+		}
+	},
+	"authors": [{
+		"name": "Ahmet Ertem",
+		"email": "amadertem@gmail.com"
+	}],
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
